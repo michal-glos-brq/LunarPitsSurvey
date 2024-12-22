@@ -1,24 +1,47 @@
 \documentclass[12pt]{article}
 \usepackage[numbers]{natbib}
-\usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{hyperref}
-\usepackage{geometry}
+\usepackage[a4paper, margin=1in]{geometry}
 \usepackage{subcaption}
 \usepackage{float}
-\geometry{a4paper, margin=1in}
 
-\title{\textbf{Subsurface Features of Lunar Pits} \\ A Contemporary Survey}
-\author{Michal Glos (213396)}
-\date{December 2024}
+
+% === Language and Fonts ===
+\usepackage[english]{babel}  % Set document language
+\usepackage[utf8]{inputenc}  % Input encoding
+\usepackage[T1]{fontenc}  % Font encoding for better hyphenation
+\usepackage{times}  % Use Times New Roman font (optional)
+
+% === Graphics and Figures ===
+\usepackage{graphicx}  % Include images
+\usepackage{caption}  % Enhance captions
+\captionsetup{font=small, labelfont=bf}
+
+% === Header and Footer ===
+\usepackage{fancyhdr}
+\fancyhf{}  % Clear default settings
+\fancyhead[L]{\nouppercase{\leftmark}}  % Display chapter title in header
+\fancyfoot[C]{\thepage}  % Page number in footer
+\pagestyle{fancy}
+
+% === Hyperlinks ===
+\usepackage{hyperref}  % Enable clickable links
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Subsurface Features of Lunar Pits},
+    pdfauthor={Michal Glos}
+}
+
 
 \begin{document}
 
-\maketitle
+\input{titlepage}
 
-\begin{abstract}
-Lunar pits, revealed through high-resolution orbital imagery, are compelling geological features that provide access to the Moon's subsurface. These structures offer critical insights into ancient volcanic activity, expose the stratigraphy of the lunar crust, and present opportunities for future exploration. This survey consolidates current understanding of their morphology, formation mechanisms, thermal properties, and spatial distribution. By leveraging data from key missions such as the Lunar Reconnaissance Orbiter (LRO) and SELENE, this work highlights the significant discoveries made regarding these features. Lunar pits are emerging as pivotal elements in lunar science, with the potential to reshape exploration strategies and resource utilization in the years ahead.
-\end{abstract}
+\input{abstract}
 
 \input{Chapters/1-introduction}
 \newpage
@@ -29,11 +52,14 @@ Lunar pits, revealed through high-resolution orbital imagery, are compelling geo
 
 \input{Chapters/4-evidence-of-cavities-beneath-lunar-pits}
 
-\input{Chapters/5-past-and-upcoming-missions}
+\input{Chapters/5-past-and-upcoming-unmanned-missions}
 
 \include{Chapters/6-potential-for-permanent-human-presence}
 
 \include{Chapters/7-conclusion}
+
+%\cite{radar-observations-lava-tubes, autonomous-lunar-technology, tethered-rovers, GRAIL, kerber2016, kerber2023, nesnas2019, jsanders-isru, pressurized-laval-tubes, morphology-to-structural-stability, parametric-lunar-arch-habitation}
+
 
 \bibliographystyle{plainnat}
 \bibliography{references}
