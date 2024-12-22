@@ -4,16 +4,18 @@
 
 \subsection{Thermal Stability and Anomalies}
 
-The thermal environment within lunar pits provides a stark contrast to the extreme temperature fluctuations of the lunar surface. Data collected from the Diviner Lunar Radiometer Experiment reveal that the interior of pits maintains remarkably stable temperatures, with values ranging from approximately 250 to 290 K in permanently shadowed regions, even during the lunar night \cite{thermal-lunar-pits}. This is in contrast to the lunar surface, where temperatures vary dramatically between $\sim$100 K during the night and $\sim$400 K in direct sunlight due to the Moon’s lack of atmosphere.
+The thermal environment within lunar pits provides a stark contrast to the extreme temperature fluctuations of the lunar surface. Data collected from the Diviner Lunar Radiometer Experiment reveal that the interior of pits maintains remarkably stable temperatures, ranging from 250 to 290 K in permanently shadowed regions, even during the lunar night \cite{thermal-lunar-pits}. This contrasts with the lunar surface, where temperatures vary dramatically between $\sim$100 K at night and $\sim$400 K in direct sunlight due to the Moon’s lack of atmosphere \cite{newer-thermal}.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{lunar-pit-thermal-model.png}
-    \caption{Schematic representation of heat transfer in lunar pits, illustrating shadowing, infrared emission, and subsurface conduction \cite{thermal-lunar-pits}.}
+    \caption{Schematic representation of heat transfer in lunar pits, illustrating shadowing, infrared emission, and subsurface conduction \cite{thermal-lunar-pits, newer-thermal}.}
     \label{fig:lunar-pit-thermal-model}
 \end{figure}
 
-The thermal stability observed in pits results primarily from their geometry. Overhanging walls and limited sky exposure block direct solar radiation and mitigate radiative heat loss during the lunar night. As modeled by Horvath et al. \cite{thermal-lunar-pits}, this creates natural “blackbody cavities,” where incoming solar radiation is absorbed and redistributed internally. The floors of pits, such as those in Mare Tranquillitatis and Mare Ingenii, have been observed to remain up to 100 K warmer than the surrounding surface at night, confirming their thermal insulating properties \cite{thermal-lunar-pits, newer-thermal}.
+The thermal stability results from the geometry of the pits, with overhanging walls and limited sky exposure blocking direct solar radiation and mitigating radiative heat loss during the lunar night. This configuration creates natural “blackbody cavities,” as modeled by Horvath et al. \cite{thermal-lunar-pits}, leading to effective absorption and internal redistribution of heat. For instance, pits such as those in Mare Tranquillitatis and Mare Ingenii have floors that remain up to 100 K warmer than their surroundings at night \cite{thermal-lunar-pits, newer-thermal, nesnas2019}.
+
+The location of lunar pits relative to the equator or poles significantly impacts their thermal behavior. Pits closer to the equator, such as those in Mare Tranquillitatis, experience more extreme daytime temperature peaks due to higher levels of direct sunlight. In contrast, pits located closer to the poles maintain more stable temperatures, making thermal management less challenging. However, polar pits receive less sunlight, which reduces the availability of solar energy for power generation and may require hybrid energy systems to support exploration missions \cite{thermal-lunar-pits, newer-thermal}.
 
 \begin{figure}[H]
     \centering
@@ -24,7 +26,7 @@ The thermal stability observed in pits results primarily from their geometry. Ov
 
 \subsection{Thermal Dynamics and Material Effects}
 
-The thermal behavior of pit floors and walls is strongly influenced by their material composition. Numerical models comparing regolith-dominated and rock-dominated surfaces reveal key differences in diurnal temperature variations. Rock surfaces exhibit smaller temperature fluctuations due to their higher thermal conductivity, which allows for more efficient heat transfer and rapid equilibration. In contrast, regolith-covered surfaces show larger diurnal variations, as the insulating properties of lunar soil slow heat exchange, leading to higher daytime peaks and lower nighttime minima \cite{thermal-lunar-pits, newer-thermal}.
+The thermal behavior of pit floors and walls depends strongly on their material composition. Regolith-dominated floors exhibit higher diurnal temperature variations due to their insulating properties, leading to pronounced daytime peaks and nighttime minima. In contrast, rock-dominated surfaces show smaller variations, as their higher thermal conductivity allows for more efficient heat transfer and equilibrium \cite{thermal-lunar-pits, newer-thermal}.
 
 \begin{figure}[H]
     \centering
@@ -33,18 +35,22 @@ The thermal behavior of pit floors and walls is strongly influenced by their mat
     \label{fig:regolith-vs-stone-thermal}
 \end{figure}
 
-This behavior has important implications for thermal stability. Pits with rocky floors maintain temperatures closer to equilibrium values due to their ability to distribute absorbed heat efficiently. Conversely, regolith-covered floors experience more pronounced temperature extremes, as their insulating nature restricts heat dissipation. These findings provide insights into the expected thermal environment within pits and can guide the selection of potential exploration and habitation sites.
+The thermal behavior of lunar pits is strongly influenced by the nature of their floors. Pits with rocky floors maintain temperatures closer to equilibrium, as rock surfaces efficiently distribute absorbed heat, making them attractive for potential habitation and exploration. In contrast, regolith-covered floors retain heat near their openings and exhibit extreme thermal gradients. These gradients, resulting from the low thermal conductivity of lunar regolith, pose challenges for thermal management, especially during extended missions \cite{thermal-lunar-pits, newer-thermal}.
+
+Numerical simulations show that rocky pit walls experience lower peak daytime temperatures and more gradual temperature variations compared to regolith surfaces, which insulate heat and cause significant temperature extremes. These properties highlight the need for tailored exploration strategies depending on the pit's material composition \cite{thermal-lunar-pits, lunar-pits-numerical-modelling}.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\linewidth]{thermal-simulation-lunar-pits-2d-regolith-rock.png}
-    \caption{Equilibrium temperature distributions for rock (a, c) and regolith (b, d) surfaces in lunar pits and caves. The top row shows extended horizontal caves, while the bottom row focuses on vertical pits. Regolith surfaces (b, d) retain heat closer to the opening, while rock surfaces (a, c) exhibit cooler and more uniform internal temperatures \cite{thermal-lunar-pits}.}
+    \includegraphics[width=0.8\linewidth]{thermal-simulation-lunar-pits-2d-regolith-rock.png}
+    \caption{Equilibrium temperature distributions for rock (a, c) and regolith (b, d) surfaces in lunar pits and caves. Rock surfaces exhibit cooler and more uniform internal temperatures due to higher thermal conductivity, while regolith retains heat closer to the opening, leading to pronounced thermal gradients. Adapted from \cite{thermal-lunar-pits}.}
     \label{fig:lunar-pit-equilibrium-temps}
 \end{figure}
 
 
 \subsection{Volatile Stability and Cold Traps}
 
-Lunar pits have also been proposed as potential cold traps for volatiles, such as water ice, particularly in high-latitude regions. However, recent studies indicate that the enclosed geometry of pits leads to multiple scattering of infrared radiation, which raises internal temperatures and reduces their efficiency as cold traps compared to traditional craters \cite{newer-thermal}. Nevertheless, specific conditions—such as pits shadowed by exterior topography or connected to deeper caves—may still support the accumulation of volatiles \cite{newer-thermal, lunar-pits-numerical-modelling}.
+While lunar pits have been proposed as potential cold traps for volatiles like water ice, recent studies show that their enclosed geometry raises internal temperatures through multiple-scattered infrared radiation (see Fig. \ref{fig:lunar-pit-thermal-model}). This reduces their efficiency compared to traditional craters \cite{newer-thermal}. Nevertheless, specific conditions—such as pits shadowed by exterior topography or connected to deeper caves—could still support volatile accumulation \cite{thermal-lunar-pits, lunar-pits-numerical-modelling}.
 
-Wilcoski et al. \cite{newer-thermal} demonstrate that volatile loss rates within pits are generally higher than in permanently shadowed regions (PSRs) of craters, making pits less efficient for long-term ice storage. However, their potential to provide protection from surface processes, such as micrometeoroid impacts and solar wind sputtering, remains an advantage for short-term volatile preservation.
+Latitude affects volatile retention within pits. Pits closer to the poles experience lower maximum temperatures and are less likely to lose volatiles to sublimation compared to equatorial pits. However, the geometry of polar pits can still lead to elevated internal temperatures compared to permanently shadowed regions (PSRs), limiting their efficiency as long-term volatile storage sites \cite{newer-thermal, lunar-pits-numerical-modelling}.
+
+Wilcoski et al. \cite{newer-thermal} demonstrate that while volatile loss rates in pits are higher than in PSRs, certain configurations—such as pits with deeper caves or extended shadowed regions—may still allow for temporary volatile preservation. These findings suggest that lunar pits could serve as short-term repositories for accessible volatiles during exploration missions.
